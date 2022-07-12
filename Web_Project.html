@@ -1,0 +1,518 @@
+<html>
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--Font Style-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+        <!--title bar icon-->
+        <link rel = "icon" href ="cart.jpg" type = "image/x-icon">
+        <title>Cloth Shop Project</title>
+
+        <script src="https://kit.fontawesome.com/f491077fc0.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>   
+        
+        <style>
+
+            #first_div{
+                display:block;
+                background-size: cover;
+                height: 65%;
+                background-image: url("c5.jpg");
+                padding-top: 10px;
+                margin-top: 10px;
+                border-radius: 5px;
+                border:none;
+                font-family:'Times New Roman', Times, serif; 
+                background-repeat: no-repeat;
+                background-size:contain;
+                width: 100%;
+                background-position: center;
+
+            }
+
+            .btn1{
+                color:rgb(39, 173, 173) ;
+                background-color:white;
+                border-radius: 4px;
+                border:none;
+                width: 150px;
+                height: 40px;
+                animation-name: btn_size_changer;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+                font-family:'Times New Roman', Times, serif; 
+                font-size: 20px;
+                margin-top: -240px;
+
+            }
+
+            .btn1:hover{
+                color:white;
+                background-color:rgb(39, 173, 173);
+                font-family:'Times New Roman', Times, serif; 
+
+                
+            }
+
+            .btn2{
+                background-color: rgb(7, 114, 163);
+                color: white;
+                height: 40px;
+                width: 120px;
+                border-radius: 20px;
+                border: none;
+                margin-left:400px;
+                transform: scale(1);
+                transition:transform 0.4s;
+                font-family:'Times New Roman', Times, serif; 
+                font-size: 20px;
+                margin-top: -120px;
+            }
+
+            .btn2:hover{
+                color: white;
+                background-color: rgb(5, 70, 100);
+                transform: scale(1.3);
+                font-family:'Times New Roman', Times, serif; 
+
+    
+            }
+
+            #second_div{
+                margin-top: 100px;
+                margin-bottom: 510px;
+                margin-left: 105px;
+                
+            }
+
+            #third_div{
+                background-image: url("c8.jpg");
+                display:block;
+                height: 65%;
+                background-size: contain;
+                margin-top: 270px;
+                border:none;
+                box-shadow: 0 20px 15px rgba(0, 0, 0, 0.5);
+                border-radius: 20px;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+
+            #fourth_div{
+                margin: 50px;
+                margin-top: 70px;
+            }
+
+            #icon_design{
+
+                margin: 10px;
+                color: white;
+                font-size: 50px;
+
+
+            }
+
+            .icons{
+                
+                color: white;
+                text-align: center;
+                font-size:40px;
+                margin-left: 500px;
+                margin-top: 30px;
+            }
+
+            .footer{
+                width: 100%;
+                height:87%;
+                background-color:rgb(5, 70, 100);
+                text-align: center;
+                margin-top: 100px;
+                padding-top: 10px;
+
+            }
+
+            .footer_info{
+                padding-top: 30px;
+                color: white;
+                text-align:justify;
+                padding-left:70px;
+                font-family:sans-serif;
+            }
+
+            .links{
+                color: white;
+            }
+
+            .second_div_icon{
+                font-size: 40px;
+                margin-bottom: 30px;
+                color:rgb(2, 45, 65);
+            }
+
+            .email_input{
+                height: 40px;
+                width: 400px;
+                border-radius: 20px;
+                border:0.5px solid rgb(5, 70, 100);
+                text-align: center;
+                margin-left: 20px;
+                font-family:'Times New Roman', Times, serif; 
+                font-size: 25px;
+                text-decoration: none;
+                margin-top: -120px;
+                margin-right: 200px;
+                font-weight: bold;
+            }
+
+            marquee{
+                color:white;
+                background-color: rgb(5, 70, 100);
+                font-size: 15px;
+                font-weight: bold;
+                border-radius: 20px;
+                padding: 5px;
+                font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+            }
+
+            #head_text{
+                padding-top: 40px;
+                animation-name: size_changer;
+                animation-duration: 1.3s;
+                animation-iteration-count: infinite;
+                font-family:'Bebas Neue', cursive;;
+                text-shadow: 3px 3px 7px rgb(20, 136, 231);
+
+            }
+
+            @keyframes size_changer{
+                0%{
+                    font-size: 25px;
+                    color: rgb(73, 93, 95);
+                    transform: scale(1);
+                }
+                50%{
+                    color: rgb(6, 56, 88);
+                    font-size: 60px;
+                    transform: scale(1.1);
+                }
+                100%{
+                    color: rgb(13, 146, 163);
+                    font-size: 25px;
+                    transform: scale(1);
+                }
+            }
+
+            @keyframes btn_size_changer{
+                0%{
+                    background-color: white;
+                    color: rgb(7, 114, 163);
+                    transform: scale(1);
+                }
+                50%{
+                    color: white;
+                    background-color: rgb(7, 114, 163);
+                    transform: scale(1.1);
+
+                }
+                100%{
+                    background-color: white;
+                    color: rgb(7, 114, 163);
+                    transform: scale(1);
+
+                }             
+            }
+
+            #info_div{
+                transform: scale(1);
+                transition:transform 1s, background-color 0s;
+                box-shadow: 0 20px 15px rgba(0, 0, 0, 0.5);
+                margin-right: 80px;
+                border-radius: 20px;
+                border:gray 1px solid;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                background-color: white;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: rgba(32, 24, 24, 0.952);
+
+            }
+
+            #info_div:hover{
+                transform: scale(1.5);
+                background-color: rgb(12, 111, 156);
+                color: white ;
+                border-radius: 15px;
+                padding: 20px;
+            }
+
+            a{
+                color: white;
+                font-size: 15px;
+
+
+            }
+            a:visited{
+                color:rgb(144, 201, 235);
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:hover {
+                color: white;
+                background-color: transparent;
+                text-decoration: none;
+            }
+            a:active {
+                color: rgb(13, 138, 240);
+                background-color: transparent;
+                text-decoration: underline;
+            }
+
+            .btn3{
+                background-color: white;
+                color: rgb(3, 29, 41);
+                height: 35px;
+                width: 100px;
+                border-radius: 20px;
+                border: none;
+                text-align: center;
+                margin-top: 385px;
+                margin-left: 500px;
+                transform: scale(1);
+                transition:transform 0.5s;
+                font-family:'Times New Roman', Times, serif; 
+                font-size: 20px;
+
+
+            }
+            .btn3:hover{
+                color: white;
+                background-color:rgb(5, 70, 100);
+                transform: scale(1.2);
+                font-family:'Times New Roman', Times, serif; 
+
+            }
+
+            .btn4{
+                border-radius: 5px;
+                background-color: rgb(7, 114, 163);
+                color: white;
+                padding: 6px;
+                text-align: center;
+                border: 1px solid ;
+                font-family: 'Times New Roman', Times, serif;
+                margin-left: 28px;
+                margin-top: 10px;
+                margin-bottom: 5px;
+            }
+            .btn4:hover{
+                background-color:rgb(5, 70, 100);
+                color:white;
+            }
+
+            @media only screen and (max-width:1200px){
+
+            }
+
+            @media only screen and (max-width:600px){
+
+
+                #first_div{
+                    margin:0%;
+                    max-height: 100%;
+                    background-size:contain;
+                    margin-top: -50px;
+                    
+                }
+
+                .email_input{
+                    width: 50%;
+                    height: auto;
+                    margin-top: -80px;
+                }
+
+                .btn1{
+                    width:30%;
+                    height: auto;
+                    margin-top: -170px;
+                    padding: 5px;
+                }
+
+                .btn2{
+                    width: 20%;
+                    height: auto; 
+                    margin-top: -75px;
+                    margin-left: 200px;
+                    padding: 5px;
+
+
+                }
+                #second_div{
+                    margin-left: 100px;
+                    margin-bottom: 200px;
+                }
+
+                #third_div{
+                    margin-top: 50px;
+                    height: 150px;
+                    display: inline-flex;
+                    background-size: cover;
+                }
+
+                #info_div{
+                    margin-bottom: 50px;
+                    width: 50%;
+                    height: 50%;
+                }
+              
+                .footer{
+                    height:180%;
+                }
+
+
+
+                .icon{
+                    font-size: 20px;
+                    display: inline;
+                }
+
+                .btn3{
+                    width:30%;
+                    height: 20%;
+                    margin-top: 170px;
+                    padding: 5px;
+                }
+
+            }
+
+            
+        </style>
+    </head>
+
+    <body>
+
+    <div class="container">
+
+        <div id="first_div" class="img-responsive">
+
+        <center>
+            <h1 id="head_text">Get Our Latest Offfers News</h1><br><br><br>
+        </center>  
+        
+        </div>
+        <center>
+            <div>
+                <input type="button" value="Shop Now" class="btn2">
+                <input type="email" placeholder="Your email here" class="email_input">
+            </div> 
+        <input type="button" title="Click here to subscribe" value="Subscribe news" class="btn1"><br><br><br><br>
+        </center>
+    
+
+        <marquee behavior="alternate" scrollamount="10">
+            Grab your best fits today and get upto 70% off. &nbsp;&nbsp;
+            Grab your best fits today and get upto 100% cashback. &nbsp;&nbsp;
+        </marquee>
+
+        <div id="second_div">
+
+                <div id="info_div" class="col-lg-2 col-xs-12 ">
+                    <p><i class="fas fa-shipping-fast second_div_icon"></i></p>
+                    <p style="text-decoration: underline;">Free Shipping Method</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <input type="button" value="Read More" class="btn4">
+                </div>  
+
+                <div id="info_div" class="col-lg-2 col-xs-12">
+                    <p><i class="fas fa-lock second_div_icon"></i></p>
+                    <p style="text-decoration: underline;">Secure Payment</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <input type="button" value="Read More" class="btn4">
+
+                </div> 
+
+                <div id="info_div" class="col-lg-2 col-xs-12">
+                    <p><i class="fas fa-shopping-bag second_div_icon"></i></p>
+                    <p style="text-decoration: underline;">Shopping Basket</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <input type="button" value="Read More" class="btn4">
+
+                </div> 
+
+                <div id="info_div" class="col-lg-2 col-xs-12">
+                    <p><i class="fas fa-users second_div_icon"></i></p>
+                    <p style="text-decoration: underline;">Customer Review</p>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <input type="button" value="Read More" class="btn4">
+
+                </div> 
+        </div>
+
+       <div id="third_div" class="img-responsive">
+            <input type="button" class="btn3" value="Buy Now">
+        </div>
+
+    </div>
+
+    <div class="footer">
+
+        <div class="col-lg-3 col-xs-12 footer_info">
+            <p style="font-weight: bold;text-decoration:underline;font-size: 20px;">Estore</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+        </div>
+
+        <div class="col-lg-3 col-xs-12 footer_info">
+            <p style="font-weight: bold;text-decoration:underline;font-size: 20px;">Quick Links</p>
+            <p><a href="#">About</a></p>
+            <p><a href="#">Offers & Discounts</a></p>
+            <p><a href="#">Get Coupon</a></p>
+            <p><a href="#">Contact Us</a></p>
+
+        </div>
+
+        <div class="col-lg-3 col-xs-12 footer_info">
+            <p style="font-weight: bold;text-decoration:underline;font-size: 20px;">New Products</p>
+            <p><a href="#">Women Cloths</a></p>
+            <p><a href="#">Men Cloths</a></p>
+            <p><a href="#">Fashion Accessories</a></p>
+            <p><a href="#">Men Accessories</a></p>
+
+        </div>
+
+        <div class="col-lg-3 col-xs-12 footer_info">
+            <p style="font-weight: bold;text-decoration:underline;font-size: 20px;">Support</p>
+            <p><a href="#">Frequently Asked Questions</a></p>
+            <p><a href="#">Terms & Conditions</a></p>
+            <p><a href="#">Privacy Policy</a></p>
+            <p><a href="#">Report a Payment Issue</a></p>
+            <br><br><br>
+        </div>
+       
+        <h1 style="color:white;font-weight: bold;">FOLLOW US !</h1>
+        
+    <div class="icons" style="display: flex;">
+
+        <a href="#" title="Facebook"><i id="icon_design" class="fab fa-facebook "></i></a>
+        <a href="#" title="Twitter"><i id="icon_design" class="fab fa-twitter"></i></a>
+        <a href="#" title="Instagram"><i id="icon_design" class="fab fa-instagram"></i></a>
+        <a href="#" title="LinkedIn"><i id="icon_design" class="fab fa-linkedin"></i></a>
+        <a href="#" title="Pinterest"><i id="icon_design" class="fab fa-pinterest"></i></a>
+
+    </div>
+
+    <br>
+
+    <a href="#" title="Appstore"><img src="app_store_badge.svg"></a>
+    <a href="#" title="Playstore"><img src="play_store_badge.svg"></a>
+    <p style="border: 1px solid white; width: 1200px;margin-left: 75px;margin-top: 25px;margin-bottom: 20px;"></p>
+    <p style="color: white;font-weight: bold;font-family:'Times New Roman', Times, serif;font-size: 20px;">
+        © 2021 Web_Project design is a trademark of ABC SHOP.</p>
+    <br>
+    </body>
+</html>
